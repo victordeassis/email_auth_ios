@@ -13,6 +13,8 @@
 		98AE206E20672644007A0BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98AE206D20672644007A0BED /* Assets.xcassets */; };
 		98AE207120672644007A0BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98AE206F20672644007A0BED /* LaunchScreen.storyboard */; };
 		98AE2079206727B3007A0BED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98AE2078206727B2007A0BED /* GoogleService-Info.plist */; };
+		98AE5B1B2069D69300C3FFD9 /* removeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AE5B1A2069D69300C3FFD9 /* removeModel.swift */; };
+		98DD26CB2069B5EE0098326F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DD26CA2069B5EE0098326F /* ListViewController.swift */; };
 		B801167824A9C3BB1F7FFF00 /* Pods_CustomEmailLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A822BD398BE4C046A33DE5 /* Pods_CustomEmailLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		98AE207020672644007A0BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98AE207220672644007A0BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98AE2078206727B2007A0BED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		98AE5B1A2069D69300C3FFD9 /* removeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = removeModel.swift; sourceTree = "<group>"; };
+		98DD26CA2069B5EE0098326F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A5A822BD398BE4C046A33DE5 /* Pods_CustomEmailLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomEmailLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B9D9586C736F1869353DFA /* Pods-CustomEmailLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomEmailLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomEmailLogin/Pods-CustomEmailLogin.release.xcconfig"; sourceTree = "<group>"; };
 		C9BCB90A8AC33470AEB158A2 /* Pods-CustomEmailLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomEmailLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomEmailLogin/Pods-CustomEmailLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,11 +86,13 @@
 			children = (
 				98AE206620672644007A0BED /* AppDelegate.swift */,
 				98AE206820672644007A0BED /* ViewController.swift */,
+				98DD26CA2069B5EE0098326F /* ListViewController.swift */,
 				98AE206A20672644007A0BED /* Main.storyboard */,
 				98AE206D20672644007A0BED /* Assets.xcassets */,
 				98AE206F20672644007A0BED /* LaunchScreen.storyboard */,
 				98AE2078206727B2007A0BED /* GoogleService-Info.plist */,
 				98AE207220672644007A0BED /* Info.plist */,
+				98AE5B1A2069D69300C3FFD9 /* removeModel.swift */,
 			);
 			path = CustomEmailLogin;
 			sourceTree = "<group>";
@@ -187,12 +193,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CustomEmailLogin/Pods-CustomEmailLogin-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +235,8 @@
 			files = (
 				98AE206920672644007A0BED /* ViewController.swift in Sources */,
 				98AE206720672644007A0BED /* AppDelegate.swift in Sources */,
+				98DD26CB2069B5EE0098326F /* ListViewController.swift in Sources */,
+				98AE5B1B2069D69300C3FFD9 /* removeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     
@@ -26,9 +27,16 @@ class ViewController: UIViewController {
     
     var isSignIn:Bool = true
     
+    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Set the firebase reference
+        ref = Database.database().reference()
+        
+        // Retrieve the posts and listen for changes
     }
 
     override func didReceiveMemoryWarning() {
